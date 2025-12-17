@@ -1,0 +1,38 @@
+{
+	"input": {
+		"description": "S3 URI to samplesheet.csv. Rows therein point to S3 URIs for fastq data",
+    "optional": false,
+    "useCase": {
+            "efficient_dv_template-Test-germline": 2,
+            "efficient_dv_template-WGS-somatic-FFPE-v1_3-100X-tumor-40X-80X-normal": 2,
+            "efficient_dv_template-Test-somatic": 2,
+            "efficient_dv_template-WGS-germline-v1_9-solaris": 2,
+            "efficient_dv_template-WES-somatic-v0_1-500x-tumor-120X-normal": 2,
+            "efficient_dv_template-WGS-somatic-matched-samples-v1_3-40X-200X": 2
+        }
+	},
+	"fasta": {
+		"description": "S3 URI of reference FASTA file"
+	},
+	"ecr_registry": {
+		"description": "Amazon ECR registry for container images (e.g. '<account-id>.dkr.ecr.<region>.amazonaws.com')"
+	},
+    "aws_region": {
+        "description": "AWS region used for execution",
+        "optional": true,
+        "useCase": {
+            "efficient_dv_template-WGS-somatic-FFPE-v1_3-100X-tumor-40X-80X-normal": [
+                "<normal_cram_file>.cram"
+            ],
+            "efficient_dv_template-Test-somatic": [
+                "s3://<ultima-input-bucket>/sample_data/somatic/normal.031865-Lb_2212-Z0134-CTTCAGCATACAGAT.cram"
+            ],
+            "efficient_dv_template-WES-somatic-v0_1-500x-tumor-120X-normal": [
+                "<normal_bam_file>.cram"
+            ],
+            "efficient_dv_template-WGS-somatic-matched-samples-v1_3-40X-200X": [
+                "<normal_cram_file>.cram"
+            ]
+        }
+    }
+}
