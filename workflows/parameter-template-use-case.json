@@ -25,7 +25,7 @@
 	"ecr_registry": {
 		"description": "Amazon ECR registry for container images (e.g. '<account-id>.dkr.ecr.<region>.amazonaws.com')",
 		"useCase": {
-            "efficient_dv_template-Test-germline":,
+            "efficient_dv_template-Test-germline":3,
             "efficient_dv_template-WGS-somatic-FFPE-v1_3-100X-tumor-40X-80X-normal": 2,
             "efficient_dv_template-Test-somatic": 2,
             "efficient_dv_template-WGS-germline-v1_9-solaris": 2,
