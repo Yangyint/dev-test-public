@@ -44,10 +44,10 @@
                 "s3://<ultima-input-bucket>/sample_data/somatic/normal.031865-Lb_2212-Z0134-CTTCAGCATACAGAT.cram",
 				"s3://<ultima-input-bucket>/sample_data/somatic/normal.031865-Lb_2212-Z0134-CTTCAGCATACAGAT2.cram"
             ],
-            "efficient_dv_template-WES-somatic-v0_1-500x-tumor-120X-normal": [
-                "map1": ["s3://<ultima-input-bucket>/sample_data", "s3://<ultima-input-bucket>/sample_data2"]
+            "efficient_dv_template-WES-somatic-v0_1-500x-tumor-120X-normal": {
+                "map1": ["s3://<ultima-input-bucket>/sample_data", "s3://<ultima-input-bucket>/sample_data2"],
 				"map2": "s3://<ultima-input-bucket>/sample_data/somatic/normal.031865-Lb_2212-Z0134-CTTCAGCATACAGAT2.cram"
-            ]
+            },
             "efficient_dv_template-WGS-somatic-matched-samples-v1_3-40X-200X": [
                 "<normal_cram_file>.cram"
             ]
