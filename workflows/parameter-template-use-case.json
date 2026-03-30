@@ -2,7 +2,7 @@
 	"input": {
 		"description": "S3 URI to samplesheet.csv. Rows therein point to S3 URIs for fastq data",
         "optional": false,
-        "predefinedValues": {
+        "useCase": {
             "efficient_dv_template-Test-germline":3,
             "efficient_dv_template-WGS-somatic-FFPE-v1_3-100X-tumor-40X-80X-normal": 2,
             "efficient_dv_template-Test-somatic": 2,
@@ -13,7 +13,7 @@
 	},
 	"fasta": {
 		"description": "S3 URI of reference FASTA file",
-		"predefinedValues": {
+		"useCase": {
             "efficient_dv_template-Test-germline":3,
             "efficient_dv_template-WGS-somatic-FFPE-v1_3-100X-tumor-40X-80X-normal": 2,
             "efficient_dv_template-Test-somatic": 2,
@@ -24,7 +24,7 @@
 	},
 	"ecr_registry": {
 		"description": "Amazon ECR registry for container images (e.g. '<account-id>.dkr.ecr.<region>.amazonaws.com')",
-		"predefinedValues": {
+		"useCase": {
             "efficient_dv_template-Test-germline":3,
             "efficient_dv_template-WGS-somatic-FFPE-v1_3-100X-tumor-40X-80X-normal": 2,
             "efficient_dv_template-Test-somatic": 2,
@@ -36,7 +36,7 @@
     "aws_region": {
         "description": "AWS region used for execution",
         "optional": true,
-        "predefinedValues": {
+        "useCase": {
             "efficient_dv_template-WGS-somatic-FFPE-v1_3-100X-tumor-40X-80X-normal": [
                 "s3://<ultima-input-bucket>/sample_data/<ultima-input-bucket>/normal.031865-Lb_2212-Z0134-CTTCAGCATACAGAT.cram"
             ],
