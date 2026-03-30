@@ -2,7 +2,7 @@
 	"input": {
 		"description": "S3 URI to samplesheet.csv. Rows therein point to S3 URIs for fastq data",
     "optional": false,
-    "useCase": {
+    "predefinedValues": {
             "efficient_dv_template-Test-germline":3,
             "efficient_dv_template-WGS-somatic-FFPE-v1_3-100X-tumor-40X-80X-normal": 2,
             "efficient_dv_template-Test-somatic": 2,
