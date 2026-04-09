@@ -1,0 +1,47 @@
+{
+	"aws_region": {
+		"description": "grey",
+		"optional": true,
+		"predefinedValues": {
+			"test1": "version",
+			"lala2": "new version",
+"test3": "version",
+			"lala4": "new version",
+"test5": "version",
+			"lala6": "new version",
+"test7": "version",
+			"lala8": "new version",
+"test9": "version",
+			"lala10": "new version",
+"test11": "version",
+			"lala12": "new version",
+"test13": "version",
+			"lala14": "new version",
+"test15": "version",
+			"lala16": "new version",
+"test17": "version",
+			"lala18": "new version",
+"test19": "version",
+			"lala20": "new version",
+"test21": "version",
+			"lala22": "new version",
+"test23": "version"
+		}
+	},
+	"input": {
+		"description": "S3 URI to samplesheet.csv. Rows therein point to S3 URIs for fastq data",
+		"optional": false,
+		"predefinedValues": {
+			"test": "version",
+			"lala": "s3://<%ultima-input-bucket%>/hg38/annotation_intervals/LCR-hs38.bed"
+		}
+	},
+	"fasta": {
+		"description": "should grey",
+		"optional": false,
+		"predefinedValues": {
+			"test": "hihi",
+			"lala": "s3://<ultima-input-bucket>/hg38/annotation_intervals/LCR-hs38.bed"
+		}
+	}
+}
